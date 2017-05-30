@@ -1,0 +1,624 @@
+getData:: 12500 files keep: 500.0 files
+getData:: 12500 files keep: 500.0 files
+getData::vocab size 17106
+getData::cost 0.424200057983 seconds
+getData:: 12500 files keep: 500.0 files
+getData:: 12500 files keep: 500.0 files
+getData::vocab size 17106
+getData::cost 0.407733201981 seconds
+input_IMDB_W2V:: words, dim  89567 300
+input_IMDB_W2V::cost 14.7382948399 seconds
+input_IMDB_W2V::embdding 17106
+train: 900  valid: 100  test: 1000
+Warning -- This is embedding_initializer function
+weigth decay for  model/hidden_to_out_weight:0
+weigth decay for  model/bidirectional_rnn/fw/gru_cell/gates/weights:0
+weigth decay for  model/bidirectional_rnn/fw/gru_cell/candidate/weights:0
+weigth decay for  model/bidirectional_rnn/bw/gru_cell/gates/weights:0
+weigth decay for  model/bidirectional_rnn/bw/gru_cell/candidate/weights:0
+Warning -- This is embedding_initializer function
+Build graph done!
+EP 1, MB 1, lr 0.0001, MB Loss= 0.7998
+EP 1, MB 2, lr 0.0001, MB Loss= 0.8007
+EP 1, MB 3, lr 0.0001, MB Loss= 0.7999
+EP 1, MB 4, lr 0.0001, MB Loss= 0.8004
+EP 1, MB 5, lr 0.0001, MB Loss= 0.8004
+EP 1, MB 6, lr 0.0001, MB Loss= 0.7995
+EP 1, MB 7, lr 0.0001, MB Loss= 0.7999
+EP 1, MB 8, lr 0.0001, MB Loss= 0.8000
+EP 1, MB 9, lr 0.0001, MB Loss= 0.7996
+Train Loss:  0.6932 Test Loss:  0.6932 Train Accuracy:  0.5000 Test Accuracy:  0.5000
+
+
+EP 2, MB 1, lr 0.0001, MB Loss= 0.7998
+EP 2, MB 2, lr 0.0001, MB Loss= 0.8002
+EP 2, MB 3, lr 0.0001, MB Loss= 0.7999
+EP 2, MB 4, lr 0.0001, MB Loss= 0.8000
+EP 2, MB 5, lr 0.0001, MB Loss= 0.7998
+EP 2, MB 6, lr 0.0001, MB Loss= 0.8004
+EP 2, MB 7, lr 0.0001, MB Loss= 0.8003
+EP 2, MB 8, lr 0.0001, MB Loss= 0.7997
+EP 2, MB 9, lr 0.0001, MB Loss= 0.7999
+Train Loss:  0.6931 Test Loss:  0.6931 Train Accuracy:  0.5056 Test Accuracy:  0.4960
+
+
+EP 3, MB 1, lr 0.0001, MB Loss= 0.7999
+EP 3, MB 2, lr 0.0001, MB Loss= 0.7997
+EP 3, MB 3, lr 0.0001, MB Loss= 0.7988
+EP 3, MB 4, lr 0.0001, MB Loss= 0.7992
+EP 3, MB 5, lr 0.0001, MB Loss= 0.7995
+EP 3, MB 6, lr 0.0001, MB Loss= 0.7989
+EP 3, MB 7, lr 0.0001, MB Loss= 0.7981
+EP 3, MB 8, lr 0.0001, MB Loss= 0.7983
+EP 3, MB 9, lr 0.0001, MB Loss= 0.7962
+Train Loss:  0.6923 Test Loss:  0.6927 Train Accuracy:  0.5056 Test Accuracy:  0.5030
+
+
+EP 4, MB 1, lr 0.0001, MB Loss= 0.7957
+EP 4, MB 2, lr 0.0001, MB Loss= 0.7952
+EP 4, MB 3, lr 0.0001, MB Loss= 0.7934
+EP 4, MB 4, lr 0.0001, MB Loss= 0.7940
+EP 4, MB 5, lr 0.0001, MB Loss= 0.7920
+EP 4, MB 6, lr 0.0001, MB Loss= 0.7907
+EP 4, MB 7, lr 0.0001, MB Loss= 0.7876
+EP 4, MB 8, lr 0.0001, MB Loss= 0.7870
+EP 4, MB 9, lr 0.0001, MB Loss= 0.7847
+Train Loss:  0.6903 Test Loss:  0.6917 Train Accuracy:  0.7100 Test Accuracy:  0.6050
+
+
+EP 5, MB 1, lr 0.0001, MB Loss= 0.7820
+EP 5, MB 2, lr 0.0001, MB Loss= 0.7807
+EP 5, MB 3, lr 0.0001, MB Loss= 0.7783
+EP 5, MB 4, lr 0.0001, MB Loss= 0.7743
+EP 5, MB 5, lr 0.0001, MB Loss= 0.7735
+EP 5, MB 6, lr 0.0001, MB Loss= 0.7683
+EP 5, MB 7, lr 0.0001, MB Loss= 0.7673
+EP 5, MB 8, lr 0.0001, MB Loss= 0.7615
+EP 5, MB 9, lr 0.0001, MB Loss= 0.7627
+Train Loss:  0.6874 Test Loss:  0.6899 Train Accuracy:  0.7300 Test Accuracy:  0.6320
+
+
+EP 6, MB 1, lr 0.0001, MB Loss= 0.7591
+EP 6, MB 2, lr 0.0001, MB Loss= 0.7527
+EP 6, MB 3, lr 0.0001, MB Loss= 0.7506
+EP 6, MB 4, lr 0.0001, MB Loss= 0.7514
+EP 6, MB 5, lr 0.0001, MB Loss= 0.7465
+EP 6, MB 6, lr 0.0001, MB Loss= 0.7427
+EP 6, MB 7, lr 0.0001, MB Loss= 0.7433
+EP 6, MB 8, lr 0.0001, MB Loss= 0.7376
+EP 6, MB 9, lr 0.0001, MB Loss= 0.7371
+Train Loss:  0.6824 Test Loss:  0.6868 Train Accuracy:  0.7389 Test Accuracy:  0.6420
+
+
+EP 7, MB 1, lr 0.0001, MB Loss= 0.7325
+EP 7, MB 2, lr 0.0001, MB Loss= 0.7241
+EP 7, MB 3, lr 0.0001, MB Loss= 0.7291
+EP 7, MB 4, lr 0.0001, MB Loss= 0.7238
+EP 7, MB 5, lr 0.0001, MB Loss= 0.7186
+EP 7, MB 6, lr 0.0001, MB Loss= 0.7139
+EP 7, MB 7, lr 0.0001, MB Loss= 0.7185
+EP 7, MB 8, lr 0.0001, MB Loss= 0.7150
+EP 7, MB 9, lr 0.0001, MB Loss= 0.6993
+Train Loss:  0.6739 Test Loss:  0.6813 Train Accuracy:  0.7411 Test Accuracy:  0.6490
+
+
+EP 8, MB 1, lr 0.0001, MB Loss= 0.6928
+EP 8, MB 2, lr 0.0001, MB Loss= 0.7028
+EP 8, MB 3, lr 0.0001, MB Loss= 0.6988
+EP 8, MB 4, lr 0.0001, MB Loss= 0.7005
+EP 8, MB 5, lr 0.0001, MB Loss= 0.6835
+EP 8, MB 6, lr 0.0001, MB Loss= 0.7036
+EP 8, MB 7, lr 0.0001, MB Loss= 0.6793
+EP 8, MB 8, lr 0.0001, MB Loss= 0.6783
+EP 8, MB 9, lr 0.0001, MB Loss= 0.6791
+Train Loss:  0.6590 Test Loss:  0.6712 Train Accuracy:  0.7533 Test Accuracy:  0.6610
+
+
+EP 9, MB 1, lr 0.0001, MB Loss= 0.6541
+EP 9, MB 2, lr 0.0001, MB Loss= 0.6680
+EP 9, MB 3, lr 0.0001, MB Loss= 0.6722
+EP 9, MB 4, lr 0.0001, MB Loss= 0.6669
+EP 9, MB 5, lr 0.0001, MB Loss= 0.6554
+EP 9, MB 6, lr 0.0001, MB Loss= 0.6447
+EP 9, MB 7, lr 0.0001, MB Loss= 0.6736
+EP 9, MB 8, lr 0.0001, MB Loss= 0.6717
+EP 9, MB 9, lr 0.0001, MB Loss= 0.6271
+Train Loss:  0.6280 Test Loss:  0.6508 Train Accuracy:  0.7478 Test Accuracy:  0.6660
+
+
+EP 10, MB 1, lr 0.0001, MB Loss= 0.6576
+EP 10, MB 2, lr 0.0001, MB Loss= 0.5676
+EP 10, MB 3, lr 0.0001, MB Loss= 0.6528
+EP 10, MB 4, lr 0.0001, MB Loss= 0.6254
+EP 10, MB 5, lr 0.0001, MB Loss= 0.5918
+EP 10, MB 6, lr 0.0001, MB Loss= 0.5814
+EP 10, MB 7, lr 0.0001, MB Loss= 0.6209
+EP 10, MB 8, lr 0.0001, MB Loss= 0.5814
+EP 10, MB 9, lr 0.0001, MB Loss= 0.6087
+Train Loss:  0.5680 Test Loss:  0.6184 Train Accuracy:  0.7211 Test Accuracy:  0.6620
+
+
+EP 11, MB 1, lr 0.0001, MB Loss= 0.7148
+EP 11, MB 2, lr 0.0001, MB Loss= 0.6194
+EP 11, MB 3, lr 0.0001, MB Loss= 0.6125
+EP 11, MB 4, lr 0.0001, MB Loss= 0.5283
+EP 11, MB 5, lr 0.0001, MB Loss= 0.5400
+EP 11, MB 6, lr 0.0001, MB Loss= 0.6315
+EP 11, MB 7, lr 0.0001, MB Loss= 0.6346
+EP 11, MB 8, lr 0.0001, MB Loss= 0.5705
+EP 11, MB 9, lr 0.0001, MB Loss= 0.5349
+Train Loss:  0.5760 Test Loss:  0.6147 Train Accuracy:  0.7478 Test Accuracy:  0.6860
+
+
+EP 12, MB 1, lr 0.0001, MB Loss= 0.6333
+EP 12, MB 2, lr 0.0001, MB Loss= 0.5394
+EP 12, MB 3, lr 0.0001, MB Loss= 0.5356
+EP 12, MB 4, lr 0.0001, MB Loss= 0.5215
+EP 12, MB 5, lr 0.0001, MB Loss= 0.5879
+EP 12, MB 6, lr 0.0001, MB Loss= 0.5516
+EP 12, MB 7, lr 0.0001, MB Loss= 0.5289
+EP 12, MB 8, lr 0.0001, MB Loss= 0.4748
+EP 12, MB 9, lr 0.0001, MB Loss= 0.5367
+Train Loss:  0.5387 Test Loss:  0.5927 Train Accuracy:  0.7456 Test Accuracy:  0.6860
+
+
+EP 13, MB 1, lr 0.0001, MB Loss= 0.5257
+EP 13, MB 2, lr 0.0001, MB Loss= 0.4498
+EP 13, MB 3, lr 0.0001, MB Loss= 0.5535
+EP 13, MB 4, lr 0.0001, MB Loss= 0.6471
+EP 13, MB 5, lr 0.0001, MB Loss= 0.5750
+EP 13, MB 6, lr 0.0001, MB Loss= 0.5905
+EP 13, MB 7, lr 0.0001, MB Loss= 0.6559
+EP 13, MB 8, lr 0.0001, MB Loss= 0.5839
+EP 13, MB 9, lr 0.0001, MB Loss= 0.5399
+Train Loss:  0.5619 Test Loss:  0.6113 Train Accuracy:  0.6944 Test Accuracy:  0.6480
+
+
+EP 14, MB 1, lr 0.0001, MB Loss= 0.5414
+EP 14, MB 2, lr 0.0001, MB Loss= 0.6237
+EP 14, MB 3, lr 0.0001, MB Loss= 0.5798
+EP 14, MB 4, lr 0.0001, MB Loss= 0.6477
+EP 14, MB 5, lr 0.0001, MB Loss= 0.5351
+EP 14, MB 6, lr 0.0001, MB Loss= 0.5959
+EP 14, MB 7, lr 0.0001, MB Loss= 0.5014
+EP 14, MB 8, lr 0.0001, MB Loss= 0.5219
+EP 14, MB 9, lr 0.0001, MB Loss= 0.5838
+Train Loss:  0.5034 Test Loss:  0.5694 Train Accuracy:  0.7422 Test Accuracy:  0.7180
+
+
+EP 15, MB 1, lr 0.0001, MB Loss= 0.6849
+EP 15, MB 2, lr 0.0001, MB Loss= 0.7018
+EP 15, MB 3, lr 0.0001, MB Loss= 0.5147
+EP 15, MB 4, lr 0.0001, MB Loss= 0.5576
+EP 15, MB 5, lr 0.0001, MB Loss= 0.5492
+EP 15, MB 6, lr 0.0001, MB Loss= 0.5208
+EP 15, MB 7, lr 0.0001, MB Loss= 0.5315
+EP 15, MB 8, lr 0.0001, MB Loss= 0.5425
+EP 15, MB 9, lr 0.0001, MB Loss= 0.5465
+Train Loss:  0.5496 Test Loss:  0.5931 Train Accuracy:  0.8067 Test Accuracy:  0.7410
+
+
+EP 16, MB 1, lr 0.0001, MB Loss= 0.5143
+EP 16, MB 2, lr 0.0001, MB Loss= 0.4380
+EP 16, MB 3, lr 0.0001, MB Loss= 0.5169
+EP 16, MB 4, lr 0.0001, MB Loss= 0.4823
+EP 16, MB 5, lr 0.0001, MB Loss= 0.5074
+EP 16, MB 6, lr 0.0001, MB Loss= 0.5664
+EP 16, MB 7, lr 0.0001, MB Loss= 0.4859
+EP 16, MB 8, lr 0.0001, MB Loss= 0.4648
+EP 16, MB 9, lr 0.0001, MB Loss= 0.5592
+Train Loss:  0.5055 Test Loss:  0.5691 Train Accuracy:  0.8056 Test Accuracy:  0.7300
+
+
+EP 17, MB 1, lr 0.0001, MB Loss= 0.4576
+EP 17, MB 2, lr 0.0001, MB Loss= 0.4484
+EP 17, MB 3, lr 0.0001, MB Loss= 0.5326
+EP 17, MB 4, lr 0.0001, MB Loss= 0.4600
+EP 17, MB 5, lr 0.0001, MB Loss= 0.4130
+EP 17, MB 6, lr 0.0001, MB Loss= 0.6165
+EP 17, MB 7, lr 0.0001, MB Loss= 0.9001
+EP 17, MB 8, lr 0.0001, MB Loss= 0.9177
+EP 17, MB 9, lr 0.0001, MB Loss= 0.7534
+Train Loss:  0.4942 Test Loss:  0.5599 Train Accuracy:  0.7933 Test Accuracy:  0.7150
+
+
+EP 18, MB 1, lr 0.0001, MB Loss= 0.4672
+EP 18, MB 2, lr 0.0001, MB Loss= 0.5670
+EP 18, MB 3, lr 0.0001, MB Loss= 0.5663
+EP 18, MB 4, lr 0.0001, MB Loss= 0.5848
+EP 18, MB 5, lr 0.0001, MB Loss= 0.4759
+EP 18, MB 6, lr 0.0001, MB Loss= 0.4954
+EP 18, MB 7, lr 0.0001, MB Loss= 0.5627
+EP 18, MB 8, lr 0.0001, MB Loss= 0.5677
+EP 18, MB 9, lr 0.0001, MB Loss= 0.5345
+Train Loss:  0.5449 Test Loss:  0.5957 Train Accuracy:  0.7678 Test Accuracy:  0.7120
+
+
+EP 19, MB 1, lr 0.0001, MB Loss= 0.5097
+EP 19, MB 2, lr 0.0001, MB Loss= 0.5401
+EP 19, MB 3, lr 0.0001, MB Loss= 0.5289
+EP 19, MB 4, lr 0.0001, MB Loss= 0.5095
+EP 19, MB 5, lr 0.0001, MB Loss= 0.5766
+EP 19, MB 6, lr 0.0001, MB Loss= 0.6196
+EP 19, MB 7, lr 0.0001, MB Loss= 0.4986
+EP 19, MB 8, lr 0.0001, MB Loss= 0.4015
+EP 19, MB 9, lr 0.0001, MB Loss= 0.4787
+Train Loss:  0.4892 Test Loss:  0.5563 Train Accuracy:  0.8100 Test Accuracy:  0.7400
+
+
+EP 20, MB 1, lr 0.0001, MB Loss= 0.4449
+EP 20, MB 2, lr 0.0001, MB Loss= 0.5647
+EP 20, MB 3, lr 0.0001, MB Loss= 0.4172
+EP 20, MB 4, lr 0.0001, MB Loss= 0.4668
+EP 20, MB 5, lr 0.0001, MB Loss= 0.4316
+EP 20, MB 6, lr 0.0001, MB Loss= 0.7057
+EP 20, MB 7, lr 0.0001, MB Loss= 0.4657
+EP 20, MB 8, lr 0.0001, MB Loss= 0.4243
+EP 20, MB 9, lr 0.0001, MB Loss= 0.6244
+Train Loss:  0.4746 Test Loss:  0.5526 Train Accuracy:  0.7667 Test Accuracy:  0.7190
+
+
+EP 21, MB 1, lr 0.0001, MB Loss= 0.4567
+EP 21, MB 2, lr 0.0001, MB Loss= 0.5185
+EP 21, MB 3, lr 0.0001, MB Loss= 0.6222
+EP 21, MB 4, lr 0.0001, MB Loss= 0.5300
+EP 21, MB 5, lr 0.0001, MB Loss= 0.4651
+EP 21, MB 6, lr 0.0001, MB Loss= 0.4422
+EP 21, MB 7, lr 0.0001, MB Loss= 0.4136
+EP 21, MB 8, lr 0.0001, MB Loss= 0.4593
+EP 21, MB 9, lr 0.0001, MB Loss= 0.5063
+Train Loss:  0.4819 Test Loss:  0.5505 Train Accuracy:  0.8322 Test Accuracy:  0.7560
+
+
+EP 22, MB 1, lr 0.0001, MB Loss= 0.4509
+EP 22, MB 2, lr 0.0001, MB Loss= 0.5127
+EP 22, MB 3, lr 0.0001, MB Loss= 0.4828
+EP 22, MB 4, lr 0.0001, MB Loss= 0.4360
+EP 22, MB 5, lr 0.0001, MB Loss= 0.4417
+EP 22, MB 6, lr 0.0001, MB Loss= 0.3503
+EP 22, MB 7, lr 0.0001, MB Loss= 0.5384
+EP 22, MB 8, lr 0.0001, MB Loss= 0.4437
+EP 22, MB 9, lr 0.0001, MB Loss= 0.5011
+Train Loss:  0.4387 Test Loss:  0.5228 Train Accuracy:  0.8278 Test Accuracy:  0.7510
+
+
+EP 23, MB 1, lr 0.0001, MB Loss= 0.4517
+EP 23, MB 2, lr 0.0001, MB Loss= 0.6061
+EP 23, MB 3, lr 0.0001, MB Loss= 0.4676
+EP 23, MB 4, lr 0.0001, MB Loss= 0.5048
+EP 23, MB 5, lr 0.0001, MB Loss= 0.4883
+EP 23, MB 6, lr 0.0001, MB Loss= 0.4473
+EP 23, MB 7, lr 0.0001, MB Loss= 0.4469
+EP 23, MB 8, lr 0.0001, MB Loss= 0.3894
+EP 23, MB 9, lr 0.0001, MB Loss= 0.4257
+Train Loss:  0.4617 Test Loss:  0.5402 Train Accuracy:  0.8356 Test Accuracy:  0.7480
+
+
+EP 24, MB 1, lr 0.0001, MB Loss= 0.4373
+EP 24, MB 2, lr 0.0001, MB Loss= 0.4655
+EP 24, MB 3, lr 0.0001, MB Loss= 0.5200
+EP 24, MB 4, lr 0.0001, MB Loss= 0.4652
+EP 24, MB 5, lr 0.0001, MB Loss= 0.4129
+EP 24, MB 6, lr 0.0001, MB Loss= 0.3593
+EP 24, MB 7, lr 0.0001, MB Loss= 0.4085
+EP 24, MB 8, lr 0.0001, MB Loss= 0.3847
+EP 24, MB 9, lr 0.0001, MB Loss= 0.3881
+Train Loss:  0.4053 Test Loss:  0.5109 Train Accuracy:  0.8422 Test Accuracy:  0.7560
+
+
+EP 25, MB 1, lr 0.0001, MB Loss= 0.3566
+EP 25, MB 2, lr 0.0001, MB Loss= 0.4376
+EP 25, MB 3, lr 0.0001, MB Loss= 0.4888
+EP 25, MB 4, lr 0.0001, MB Loss= 0.4512
+EP 25, MB 5, lr 0.0001, MB Loss= 0.4491
+EP 25, MB 6, lr 0.0001, MB Loss= 0.3805
+EP 25, MB 7, lr 0.0001, MB Loss= 0.4347
+EP 25, MB 8, lr 0.0001, MB Loss= 0.3662
+EP 25, MB 9, lr 0.0001, MB Loss= 0.5082
+Train Loss:  0.4348 Test Loss:  0.5250 Train Accuracy:  0.8511 Test Accuracy:  0.7620
+
+
+EP 26, MB 1, lr 0.0001, MB Loss= 0.4589
+EP 26, MB 2, lr 0.0001, MB Loss= 0.3954
+EP 26, MB 3, lr 0.0001, MB Loss= 0.3532
+EP 26, MB 4, lr 0.0001, MB Loss= 0.3693
+EP 26, MB 5, lr 0.0001, MB Loss= 0.3635
+EP 26, MB 6, lr 0.0001, MB Loss= 0.4227
+EP 26, MB 7, lr 0.0001, MB Loss= 0.3987
+EP 26, MB 8, lr 0.0001, MB Loss= 0.6669
+EP 26, MB 9, lr 0.0001, MB Loss= 0.5052
+Train Loss:  0.5221 Test Loss:  0.6093 Train Accuracy:  0.6733 Test Accuracy:  0.6410
+
+
+EP 27, MB 1, lr 0.0001, MB Loss= 0.6376
+EP 27, MB 2, lr 0.0001, MB Loss= 0.7849
+EP 27, MB 3, lr 0.0001, MB Loss= 0.8520
+EP 27, MB 4, lr 0.0001, MB Loss= 0.7176
+EP 27, MB 5, lr 0.0001, MB Loss= 0.5142
+EP 27, MB 6, lr 0.0001, MB Loss= 0.5977
+EP 27, MB 7, lr 0.0001, MB Loss= 0.6420
+EP 27, MB 8, lr 0.0001, MB Loss= 0.5603
+EP 27, MB 9, lr 0.0001, MB Loss= 0.5370
+Train Loss:  0.5819 Test Loss:  0.6207 Train Accuracy:  0.7067 Test Accuracy:  0.6550
+
+
+EP 28, MB 1, lr 0.0001, MB Loss= 0.5799
+EP 28, MB 2, lr 0.0001, MB Loss= 0.5766
+EP 28, MB 3, lr 0.0001, MB Loss= 0.5690
+EP 28, MB 4, lr 0.0001, MB Loss= 0.5886
+EP 28, MB 5, lr 0.0001, MB Loss= 0.5817
+EP 28, MB 6, lr 0.0001, MB Loss= 0.4760
+EP 28, MB 7, lr 0.0001, MB Loss= 0.4898
+EP 28, MB 8, lr 0.0001, MB Loss= 0.5809
+EP 28, MB 9, lr 0.0001, MB Loss= 0.4116
+Train Loss:  0.4517 Test Loss:  0.5541 Train Accuracy:  0.7700 Test Accuracy:  0.6900
+
+
+EP 29, MB 1, lr 0.0001, MB Loss= 0.6084
+EP 29, MB 2, lr 0.0001, MB Loss= 0.6754
+EP 29, MB 3, lr 0.0001, MB Loss= 0.4653
+EP 29, MB 4, lr 0.0001, MB Loss= 0.4265
+EP 29, MB 5, lr 0.0001, MB Loss= 0.6750
+EP 29, MB 6, lr 0.0001, MB Loss= 0.6906
+EP 29, MB 7, lr 0.0001, MB Loss= 0.4260
+EP 29, MB 8, lr 0.0001, MB Loss= 0.4491
+EP 29, MB 9, lr 0.0001, MB Loss= 0.5535
+Train Loss:  0.4530 Test Loss:  0.5480 Train Accuracy:  0.7956 Test Accuracy:  0.7050
+
+
+EP 30, MB 1, lr 0.0001, MB Loss= 0.4773
+EP 30, MB 2, lr 0.0001, MB Loss= 0.4407
+EP 30, MB 3, lr 0.0001, MB Loss= 0.3960
+EP 30, MB 4, lr 0.0001, MB Loss= 0.3894
+EP 30, MB 5, lr 0.0001, MB Loss= 0.4417
+EP 30, MB 6, lr 0.0001, MB Loss= 0.4534
+EP 30, MB 7, lr 0.0001, MB Loss= 0.4517
+EP 30, MB 8, lr 0.0001, MB Loss= 0.4363
+EP 30, MB 9, lr 0.0001, MB Loss= 0.4389
+Train Loss:  0.4218 Test Loss:  0.5210 Train Accuracy:  0.8644 Test Accuracy:  0.7530
+
+
+EP 31, MB 1, lr 0.0001, MB Loss= 0.4035
+EP 31, MB 2, lr 0.0001, MB Loss= 0.4664
+EP 31, MB 3, lr 0.0001, MB Loss= 0.4129
+EP 31, MB 4, lr 0.0001, MB Loss= 0.4388
+EP 31, MB 5, lr 0.0001, MB Loss= 0.3257
+EP 31, MB 6, lr 0.0001, MB Loss= 0.3908
+EP 31, MB 7, lr 0.0001, MB Loss= 0.4127
+EP 31, MB 8, lr 0.0001, MB Loss= 0.4258
+EP 31, MB 9, lr 0.0001, MB Loss= 0.5128
+Train Loss:  0.4413 Test Loss:  0.5472 Train Accuracy:  0.8144 Test Accuracy:  0.7190
+
+
+EP 32, MB 1, lr 0.0001, MB Loss= 0.4627
+EP 32, MB 2, lr 0.0001, MB Loss= 0.3955
+EP 32, MB 3, lr 0.0001, MB Loss= 0.4528
+EP 32, MB 4, lr 0.0001, MB Loss= 0.4755
+EP 32, MB 5, lr 0.0001, MB Loss= 0.3532
+EP 32, MB 6, lr 0.0001, MB Loss= 0.5045
+EP 32, MB 7, lr 0.0001, MB Loss= 0.4482
+EP 32, MB 8, lr 0.0001, MB Loss= 0.4287
+EP 32, MB 9, lr 0.0001, MB Loss= 0.4014
+Train Loss:  0.4334 Test Loss:  0.5317 Train Accuracy:  0.8322 Test Accuracy:  0.7370
+
+
+EP 33, MB 1, lr 0.0001, MB Loss= 0.4468
+EP 33, MB 2, lr 0.0001, MB Loss= 0.3920
+EP 33, MB 3, lr 0.0001, MB Loss= 0.4444
+EP 33, MB 4, lr 0.0001, MB Loss= 0.3598
+EP 33, MB 5, lr 0.0001, MB Loss= 0.4223
+EP 33, MB 6, lr 0.0001, MB Loss= 0.4737
+EP 33, MB 7, lr 0.0001, MB Loss= 0.4240
+EP 33, MB 8, lr 0.0001, MB Loss= 0.3759
+EP 33, MB 9, lr 0.0001, MB Loss= 0.4587
+Train Loss:  0.4073 Test Loss:  0.5149 Train Accuracy:  0.8733 Test Accuracy:  0.7690
+
+
+EP 34, MB 1, lr 0.0001, MB Loss= 0.3641
+EP 34, MB 2, lr 0.0001, MB Loss= 0.3803
+EP 34, MB 3, lr 0.0001, MB Loss= 0.3595
+EP 34, MB 4, lr 0.0001, MB Loss= 0.4714
+EP 34, MB 5, lr 0.0001, MB Loss= 0.4140
+EP 34, MB 6, lr 0.0001, MB Loss= 0.4770
+EP 34, MB 7, lr 0.0001, MB Loss= 0.5742
+EP 34, MB 8, lr 0.0001, MB Loss= 0.3732
+EP 34, MB 9, lr 0.0001, MB Loss= 0.5453
+Train Loss:  0.4741 Test Loss:  0.5794 Train Accuracy:  0.7700 Test Accuracy:  0.6710
+
+
+EP 35, MB 1, lr 0.0001, MB Loss= 0.5090
+EP 35, MB 2, lr 0.0001, MB Loss= 0.4269
+EP 35, MB 3, lr 0.0001, MB Loss= 0.4535
+EP 35, MB 4, lr 0.0001, MB Loss= 0.4664
+EP 35, MB 5, lr 0.0001, MB Loss= 0.4434
+EP 35, MB 6, lr 0.0001, MB Loss= 0.4182
+EP 35, MB 7, lr 0.0001, MB Loss= 0.4936
+EP 35, MB 8, lr 0.0001, MB Loss= 0.4376
+EP 35, MB 9, lr 0.0001, MB Loss= 0.5066
+Train Loss:  0.4564 Test Loss:  0.5436 Train Accuracy:  0.8489 Test Accuracy:  0.7590
+
+
+EP 36, MB 1, lr 0.0001, MB Loss= 0.4345
+EP 36, MB 2, lr 0.0001, MB Loss= 0.3655
+EP 36, MB 3, lr 0.0001, MB Loss= 0.4770
+EP 36, MB 4, lr 0.0001, MB Loss= 0.4743
+EP 36, MB 5, lr 0.0001, MB Loss= 0.3141
+EP 36, MB 6, lr 0.0001, MB Loss= 0.4011
+EP 36, MB 7, lr 0.0001, MB Loss= 0.4895
+EP 36, MB 8, lr 0.0001, MB Loss= 0.3890
+EP 36, MB 9, lr 0.0001, MB Loss= 0.3688
+Train Loss:  0.3907 Test Loss:  0.5390 Train Accuracy:  0.8367 Test Accuracy:  0.7470
+
+
+EP 37, MB 1, lr 0.0001, MB Loss= 0.5762
+EP 37, MB 2, lr 0.0001, MB Loss= 0.3940
+EP 37, MB 3, lr 0.0001, MB Loss= 0.3762
+EP 37, MB 4, lr 0.0001, MB Loss= 0.3324
+EP 37, MB 5, lr 0.0001, MB Loss= 0.5902
+EP 37, MB 6, lr 0.0001, MB Loss= 0.5572
+EP 37, MB 7, lr 0.0001, MB Loss= 0.4076
+EP 37, MB 8, lr 0.0001, MB Loss= 0.3475
+EP 37, MB 9, lr 0.0001, MB Loss= 0.3755
+Train Loss:  0.4141 Test Loss:  0.5153 Train Accuracy:  0.8600 Test Accuracy:  0.7560
+
+
+EP 38, MB 1, lr 0.0001, MB Loss= 0.2999
+EP 38, MB 2, lr 0.0001, MB Loss= 0.4438
+EP 38, MB 3, lr 0.0001, MB Loss= 0.4879
+EP 38, MB 4, lr 0.0001, MB Loss= 0.3901
+EP 38, MB 5, lr 0.0001, MB Loss= 0.4785
+EP 38, MB 6, lr 0.0001, MB Loss= 0.3573
+EP 38, MB 7, lr 0.0001, MB Loss= 0.3962
+EP 38, MB 8, lr 0.0001, MB Loss= 0.4273
+EP 38, MB 9, lr 0.0001, MB Loss= 0.3902
+Train Loss:  0.4117 Test Loss:  0.5191 Train Accuracy:  0.8711 Test Accuracy:  0.7710
+
+
+EP 39, MB 1, lr 0.0001, MB Loss= 0.4254
+EP 39, MB 2, lr 0.0001, MB Loss= 0.4005
+EP 39, MB 3, lr 0.0001, MB Loss= 0.4005
+EP 39, MB 4, lr 0.0001, MB Loss= 0.4015
+EP 39, MB 5, lr 0.0001, MB Loss= 0.4182
+EP 39, MB 6, lr 0.0001, MB Loss= 0.3648
+EP 39, MB 7, lr 0.0001, MB Loss= 0.5212
+EP 39, MB 8, lr 0.0001, MB Loss= 0.4479
+EP 39, MB 9, lr 0.0001, MB Loss= 0.4559
+Train Loss:  0.4705 Test Loss:  0.5638 Train Accuracy:  0.7956 Test Accuracy:  0.6900
+
+
+EP 40, MB 1, lr 0.0001, MB Loss= 0.5173
+EP 40, MB 2, lr 0.0001, MB Loss= 0.5114
+EP 40, MB 3, lr 0.0001, MB Loss= 0.4343
+EP 40, MB 4, lr 0.0001, MB Loss= 0.4343
+EP 40, MB 5, lr 0.0001, MB Loss= 0.4180
+EP 40, MB 6, lr 0.0001, MB Loss= 0.4197
+EP 40, MB 7, lr 0.0001, MB Loss= 0.3819
+EP 40, MB 8, lr 0.0001, MB Loss= 0.3967
+EP 40, MB 9, lr 0.0001, MB Loss= 0.3726
+Train Loss:  0.4306 Test Loss:  0.5425 Train Accuracy:  0.8389 Test Accuracy:  0.7190
+
+
+EP 41, MB 1, lr 0.0001, MB Loss= 0.4390
+EP 41, MB 2, lr 0.0001, MB Loss= 0.3633
+EP 41, MB 3, lr 0.0001, MB Loss= 0.4592
+EP 41, MB 4, lr 0.0001, MB Loss= 0.4239
+EP 41, MB 5, lr 0.0001, MB Loss= 0.3499
+EP 41, MB 6, lr 0.0001, MB Loss= 0.5308
+EP 41, MB 7, lr 0.0001, MB Loss= 0.4108
+EP 41, MB 8, lr 0.0001, MB Loss= 0.3033
+EP 41, MB 9, lr 0.0001, MB Loss= 0.7075
+Train Loss:  0.4926 Test Loss:  0.6300 Train Accuracy:  0.7356 Test Accuracy:  0.6780
+
+
+EP 42, MB 1, lr 0.0001, MB Loss= 0.7680
+EP 42, MB 2, lr 0.0001, MB Loss= 0.4421
+EP 42, MB 3, lr 0.0001, MB Loss= 0.4466
+EP 42, MB 4, lr 0.0001, MB Loss= 0.7408
+EP 42, MB 5, lr 0.0001, MB Loss= 0.6175
+EP 42, MB 6, lr 0.0001, MB Loss= 0.3996
+EP 42, MB 7, lr 0.0001, MB Loss= 0.5123
+EP 42, MB 8, lr 0.0001, MB Loss= 0.5668
+EP 42, MB 9, lr 0.0001, MB Loss= 0.4860
+Train Loss:  0.4836 Test Loss:  0.5611 Train Accuracy:  0.8833 Test Accuracy:  0.7650
+
+
+EP 43, MB 1, lr 0.0001, MB Loss= 0.4690
+EP 43, MB 2, lr 0.0001, MB Loss= 0.5180
+EP 43, MB 3, lr 0.0001, MB Loss= 0.4875
+EP 43, MB 4, lr 0.0001, MB Loss= 0.3754
+EP 43, MB 5, lr 0.0001, MB Loss= 0.4440
+EP 43, MB 6, lr 0.0001, MB Loss= 0.3614
+EP 43, MB 7, lr 0.0001, MB Loss= 0.4603
+EP 43, MB 8, lr 0.0001, MB Loss= 0.4097
+EP 43, MB 9, lr 0.0001, MB Loss= 0.3926
+Train Loss:  0.3981 Test Loss:  0.5136 Train Accuracy:  0.8878 Test Accuracy:  0.7700
+
+
+EP 44, MB 1, lr 0.0001, MB Loss= 0.3575
+EP 44, MB 2, lr 0.0001, MB Loss= 0.4619
+EP 44, MB 3, lr 0.0001, MB Loss= 0.3776
+EP 44, MB 4, lr 0.0001, MB Loss= 0.3446
+EP 44, MB 5, lr 0.0001, MB Loss= 0.4985
+EP 44, MB 6, lr 0.0001, MB Loss= 0.4099
+EP 44, MB 7, lr 0.0001, MB Loss= 0.4267
+EP 44, MB 8, lr 0.0001, MB Loss= 0.3779
+EP 44, MB 9, lr 0.0001, MB Loss= 0.4534
+Train Loss:  0.4096 Test Loss:  0.5315 Train Accuracy:  0.8356 Test Accuracy:  0.7400
+
+
+EP 45, MB 1, lr 0.0001, MB Loss= 0.4952
+EP 45, MB 2, lr 0.0001, MB Loss= 0.4055
+EP 45, MB 3, lr 0.0001, MB Loss= 0.4685
+EP 45, MB 4, lr 0.0001, MB Loss= 0.4247
+EP 45, MB 5, lr 0.0001, MB Loss= 0.3396
+EP 45, MB 6, lr 0.0001, MB Loss= 0.4573
+EP 45, MB 7, lr 0.0001, MB Loss= 0.4109
+EP 45, MB 8, lr 0.0001, MB Loss= 0.5386
+EP 45, MB 9, lr 0.0001, MB Loss= 0.4895
+Train Loss:  0.3393 Test Loss:  0.5044 Train Accuracy:  0.8689 Test Accuracy:  0.7570
+
+
+EP 46, MB 1, lr 0.0001, MB Loss= 0.4545
+EP 46, MB 2, lr 0.0001, MB Loss= 0.4854
+EP 46, MB 3, lr 0.0001, MB Loss= 0.3256
+EP 46, MB 4, lr 0.0001, MB Loss= 0.3606
+EP 46, MB 5, lr 0.0001, MB Loss= 0.3814
+EP 46, MB 6, lr 0.0001, MB Loss= 0.3217
+EP 46, MB 7, lr 0.0001, MB Loss= 0.4460
+EP 46, MB 8, lr 0.0001, MB Loss= 0.4007
+EP 46, MB 9, lr 0.0001, MB Loss= 0.4024
+Train Loss:  0.3994 Test Loss:  0.5128 Train Accuracy:  0.8822 Test Accuracy:  0.7750
+
+
+EP 47, MB 1, lr 0.0001, MB Loss= 0.4415
+EP 47, MB 2, lr 0.0001, MB Loss= 0.3604
+EP 47, MB 3, lr 0.0001, MB Loss= 0.3854
+EP 47, MB 4, lr 0.0001, MB Loss= 0.4128
+EP 47, MB 5, lr 0.0001, MB Loss= 0.3387
+EP 47, MB 6, lr 0.0001, MB Loss= 0.3373
+EP 47, MB 7, lr 0.0001, MB Loss= 0.4139
+EP 47, MB 8, lr 0.0001, MB Loss= 0.3665
+EP 47, MB 9, lr 0.0001, MB Loss= 0.3499
+Train Loss:  0.3626 Test Loss:  0.5030 Train Accuracy:  0.8767 Test Accuracy:  0.7610
+
+
+EP 48, MB 1, lr 0.0001, MB Loss= 0.3376
+EP 48, MB 2, lr 0.0001, MB Loss= 0.3741
+EP 48, MB 3, lr 0.0001, MB Loss= 0.4709
+EP 48, MB 4, lr 0.0001, MB Loss= 0.3897
+EP 48, MB 5, lr 0.0001, MB Loss= 0.3790
+EP 48, MB 6, lr 0.0001, MB Loss= 0.3276
+EP 48, MB 7, lr 0.0001, MB Loss= 0.5449
+EP 48, MB 8, lr 0.0001, MB Loss= 0.3938
+EP 48, MB 9, lr 0.0001, MB Loss= 0.3349
+Train Loss:  0.4189 Test Loss:  0.5706 Train Accuracy:  0.7822 Test Accuracy:  0.7130
+
+
+EP 49, MB 1, lr 0.0001, MB Loss= 0.4472
+EP 49, MB 2, lr 0.0001, MB Loss= 0.6310
+EP 49, MB 3, lr 0.0001, MB Loss= 0.3897
+EP 49, MB 4, lr 0.0001, MB Loss= 0.5173
+EP 49, MB 5, lr 0.0001, MB Loss= 0.6075
+EP 49, MB 6, lr 0.0001, MB Loss= 0.4830
+EP 49, MB 7, lr 0.0001, MB Loss= 0.3634
+EP 49, MB 8, lr 0.0001, MB Loss= 0.4034
+EP 49, MB 9, lr 0.0001, MB Loss= 0.3891
+Train Loss:  0.4315 Test Loss:  0.5418 Train Accuracy:  0.8356 Test Accuracy:  0.7230
+
+
+EP 50, MB 1, lr 0.0001, MB Loss= 0.4658
+EP 50, MB 2, lr 0.0001, MB Loss= 0.4749
+EP 50, MB 3, lr 0.0001, MB Loss= 0.4672
+EP 50, MB 4, lr 0.0001, MB Loss= 0.4093
+EP 50, MB 5, lr 0.0001, MB Loss= 0.3345
+EP 50, MB 6, lr 0.0001, MB Loss= 0.4572
+EP 50, MB 7, lr 0.0001, MB Loss= 0.3929
+EP 50, MB 8, lr 0.0001, MB Loss= 0.3952
+EP 50, MB 9, lr 0.0001, MB Loss= 0.4307
+Train Loss:  0.4706 Test Loss:  0.6125 Train Accuracy:  0.7400 Test Accuracy:  0.6790
+
+
+Optimization Finished!
+session recovering... loading the best parameters...
+session recovered!
+Train Accuracy:  0.8833 Test Accuracy:  0.7650

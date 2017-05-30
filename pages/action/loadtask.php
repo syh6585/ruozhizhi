@@ -5,7 +5,7 @@
 	$data ="";
 	if ($result->num_rows > 0) {
        		while($row = $result->fetch_assoc()) {
-			$data = $data.$row["id"].",".$row["posX"].",".$row["posY"]."#";
+			$data = $data.$row["id"].",".$row["posX"].",".$row["posY"].",".$row["class"]."#";
 		}
 		$data = substr($data,0,-1);
 	}

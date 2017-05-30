@@ -1,0 +1,17 @@
+loss: 1.0 at iters: 0, with time: 1
+loss: 0.4745083486136112 at iters: 1, with time: 2559
+loss: 0.44961399456969753 at iters: 2, with time: 4696
+loss: 0.44511389693786063 at iters: 3, with time: 6884
+loss: 0.443698011089796 at iters: 4, with time: 8470
+loss: 0.4433938002638512 at iters: 5, with time: 9789
+loss: 0.4430760573364456 at iters: 6, with time: 11198
+loss: 0.4432754109981664 at iters: 7, with time: 12593
+loss: 0.4430897651331802 at iters: 8, with time: 13908
+loss: 0.4429346634158909 at iters: 9, with time: 15148
+loss: 0.4429809938159732 at iters: 10, with time: 16386
+loss: 0.4429269670187672 at iters: 11, with time: 17592
+loss: 0.44294296669610694 at iters: 12, with time: 18817
+loss: 0.44292794280464065 at iters: 13, with time: 20000
+loss: 0.44292546109498343 at iters: 14, with time: 21362
+loss: 0.4429236183245866 at iters: 15, with time: 22704
+loss: 0.44294565616169235 at iters: 16, with time: 24302

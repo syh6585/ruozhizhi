@@ -1,0 +1,20 @@
+getData:: 12500 files keep: 500.0 files
+getData:: 12500 files keep: 500.0 files
+getData::vocab size 17106
+getData::cost 0.263293981552 seconds
+getData:: 12500 files keep: 500.0 files
+getData:: 12500 files keep: 500.0 files
+getData::vocab size 17106
+getData::cost 0.247308015823 seconds
+input_IMDB_W2V:: words, dim  89567 300
+input_IMDB_W2V::cost 9.97271990776 seconds
+input_IMDB_W2V::embdding 17106
+train: 900  valid: 100  test: 1000
+Warning -- This is embedding_initializer function
+weigth decay for  model/hidden_to_out_weight:0
+weigth decay for  model/bidirectional_rnn/fw/gru_cell/gates/weights:0
+weigth decay for  model/bidirectional_rnn/fw/gru_cell/candidate/weights:0
+weigth decay for  model/bidirectional_rnn/bw/gru_cell/gates/weights:0
+weigth decay for  model/bidirectional_rnn/bw/gru_cell/candidate/weights:0
+Warning -- This is embedding_initializer function
+Build graph done!

@@ -25,10 +25,10 @@
 
     <!-- Custom Fonts -->
     <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	
-	<!--new-->
-	    <link rel="stylesheet" type="text/css" href="../vendor/new/hadoop.css"> 
-	  <link rel="stylesheet" href="../vendor/new/jquery-ui.css">
+
+    <link rel="stylesheet" type="text/css" href="../vendor/new/hadoop.css"> 
+    <link rel="stylesheet" href="../vendor/new/jquery-ui.css">
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -43,9 +43,6 @@
 		z-index:100000
 	}
 	#newModal{
-		z-index:100000
-	}
-	#runModal{
 		z-index:100000
 	}
     </style>
@@ -66,10 +63,16 @@
                 if(!isset($_SESSION['ml_wbid'])) {
                         header("Location:index.php");
                 }
+		require_once '/data/website/libble/pages/class/mysql.class.php';
+        	$db=new Mysql();
+		$result1=$db->select("Limits","username='".$_SESSION['ml_username']."' and wbid=".$_SESSION['ml_wbid']);
+		$row1 = $result1->fetch_assoc();
+		if ($row1["lvl"]==3){
+			header("Location:index.php");
+		}	
         ?>
 
     <div id="wrapper">
-
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
@@ -77,8 +80,7 @@
             </div>
             <!-- /.navbar-header -->
 
-            <ul class="nav navbar-top-links navbar-right">
-                
+            <ul class="nav navbar-top-links navbar-right"> 
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
@@ -131,11 +133,19 @@
                                     <a href="#">浅层学习 <span class="fa arrow"></span></a>
                                     <ul class="nav nav-third-level">
                                         <li>
-                                            <?php if(!isset($_SESSION['ml_wbid'])) { ?>
-                                            <a href="#">Logistic Regression</a>
-					    <?php }else{ ?>	
-                                            <a onmousedown = "show('Logistic Regression');">Logistic Regression</a>
-					    <?php } ?>	
+                                            <a onmousedown = "show(0);">Logistic Regression</a>
+                                        </li>
+                                        <li>
+                                            <a onmousedown = "show(1);">Lasso</a>
+                                        </li>
+                                        <li>
+                                            <a onmousedown = "show(2);">SVM</a>
+                                        </li>
+                                        <li>
+                                            <a onmousedown = "show(3);">Ridge Regression</a>
+                                        </li>
+                                        <li>
+                                            <a onmousedown = "show(4);">Matrix Factorization</a>
                                         </li>
                                         <li>
                                             <a href="#">待开发...</a>
@@ -144,10 +154,13 @@
                                     <!-- /.nav-third-level -->
                                 </li>
                                 <li>
-                                    <a href="#">深层学习 <span class="fa arrow"></span></a>
+                                    <a href="#">深度学习 <span class="fa arrow"></span></a>
                                     <ul class="nav nav-third-level">
                                         <li>
-                                            <a href="#">待开发...</a>
+                                            <a onmousedown = "show(5);">AlexNet</a>
+                                        </li>
+                                        <li>
+                                            <a onmousedown = "show(6);">RNN</a>
                                         </li>
                                         <li>
                                             <a href="#">待开发...</a>
@@ -166,7 +179,8 @@
         </nav>
 
         <div id="page-wrapper">
-	<!-- Modal -->
+
+	    <!-- Modal -->
             <div class="modal fade" id="delModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                         <div class="modal-content">
@@ -187,59 +201,10 @@
                 <!-- /.modal-dialog -->
             </div>
             <!-- /.modal -->
-	<!-- Modal -->
-            <div class="modal fade" id="runModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                        <div class="modal-content">
-                                <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                        <h1 class="modal-title" id="myModalLabel">Loss曲线</h1>
-                                </div>
-                                <div class="modal-body">
-                                        <div id="wrapper">
-
-	    <!--div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Loss曲线</h1>
-                </div>
-            </div-->		
-
-            <div class="row">
-		
-		 <div class="col-lg-12">
-                    <div class="panel panel-default">
-                        <div  class="panel-heading">
-                            <span id="state"><i class="fa fa-retweet fa-fw"></i> 准备中...</span>
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div id="linechart" class="panel-body" style="overflow: auto;">
-				<canvas id="line" height="360" width="1000"></canvas>
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
-                <!-- /.col-lg-12 -->	
-
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /#page-wrapper -->
 
 
-                                </div>
-                                <div class="modal-footer">
-                                        <!--button type="button" class="btn btn-default" data-dismiss="modal">关闭</button-->
-                                        <!--button type="button" onClick="deltask()" class="btn btn-primary" data-dismiss="modal">确认</button-->
-                                </div>
-                        </div>
-                        <!-- /.modal-content -->
-                </div>
-                <!-- /.modal-dialog -->
-            </div>
-            <!-- /.modal -->
-<!-- Modal -->
-			<div class="modal fade" id="newModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		    //浏览文件的窗口
+		    <div class="modal fade" id="newModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				<div class="modal-dialog" >
 					<div class="modal-content"style="width:800px;height:500px">
 						<div class="modal-header" style="height:40px;">
@@ -275,88 +240,89 @@
 								</form>
 							</div>
       
-						<div class="input-group"></div>
-						<br />
-      					<div id="panel"style="width:100%;height:70%;overflow:auto;">
+							<div class="input-group"></div>
+							<br />
+      							<div id="panel"style="width:100%;height:70%;overflow:auto;">
 		
 		
-						</div>
-
-      					<div class="row" style="width:100%">
-        
-		  					<div class="input-group" style="text-align:right;margin-top:10px;">
-								<span class="input-group-btn">
-									<button class="btn btn-info"
-											        id="choosedir">确定
-									</button>
-								</span>
 							</div>
-        <!--div class="col-xs-2"><p>Hadoop, 2016.</p></div-->
-		 
-      					</div>
 
-   		 			</div>
+							<div class="row" style="width:100%">
+			
+								<div class="input-group" style="text-align:right;margin-top:10px;">
+									<span class="input-group-btn">
+										<button class="btn btn-info"
+														id="choosedir">确定
+										</button>
+									</span>
+								</div>
+			<!--div class="col-xs-2"><p>Hadoop, 2016.</p></div-->
+			
+							</div>
 
-					<script type="text/x-dust-template" id="tmpl-explorer">
-						<table class="table" id="tab">
-							<thead>
-								<tr>
-									<th>Name</th>
-									<th>Permission</th>
-									<th>Owner</th>
-									<th>Group</th>
-									<th>Size</th>
-									<th>Last Modified</th>
+   		 				</div>
 
-									
-								</tr>
-							</thead>
-							<tbody>
-							{#FileStatus}
-							<tr  class="browse-file-new" inode-type="{type}" inode-path="{pathSuffix}">
-								<td><a style="cursor:pointer" inode-type="{type}" class="explorer-browse-links" inode-path="{pathSuffix}">{pathSuffix}</a></td>
-								<td>{type|helper_to_directory}{permission|helper_to_permission}{aclBit|helper_to_acl_bit}</td>
-								<td>{owner}</td>
-								<td>{group}</td>
-								<td>{length|fmt_bytes}</td>
-								<td>{#helper_date_tostring value="{modificationTime}"/}</td>
+						<script type="text/x-dust-template" id="tmpl-explorer">
+							<table class="table" id="tab">
+								<thead>
+									<tr>
+										<th>Name</th>
+										<th>Permission</th>
+										<th>Owner</th>
+										<th>Group</th>
+										<th>Size</th>
+										<th>Last Modified</th>
 
-							</tr>
-							{/FileStatus}
-							</tbody>
-						</table>
-					</script>
+										
+									</tr>
+								</thead>
+								<tbody>
+									{#FileStatus}
+									<tr  class="browse-file-new" inode-type="{type}" inode-path="{pathSuffix}">
+										<td><a style="cursor:pointer" inode-type="{type}" class="explorer-browse-links" inode-path="{pathSuffix}">{pathSuffix}</a></td>
+										<td>{type|helper_to_directory}{permission|helper_to_permission}{aclBit|helper_to_acl_bit}</td>
+										<td>{owner}</td>
+										<td>{group}</td>
+										<td>{length|fmt_bytes}</td>
+										<td>{#helper_date_tostring value="{modificationTime}"/}</td>
 
-					<script type="text/x-dust-template" id="tmpl-block-info">
-						{#block}
-							<p>Block ID: {blockId}</p>
-							<p>Block Pool ID: {blockPoolId}</p>
-							<p>Generation Stamp: {generationStamp}</p>
-							<p>Size: {numBytes}</p>
-						{/block}
-						<p>Availability:
-							<ul>
-							{#locations}
-							<li>{hostName}</li>
-							{/locations}
-							</ul>
-						</p>
-					</script>
+									</tr>
+									{/FileStatus}
+								</tbody>
+							</table>
+						</script>
 
+						<script type="text/x-dust-template" id="tmpl-block-info">
+							{#block}
+								<p>Block ID: {blockId}</p>
+								<p>Block Pool ID: {blockPoolId}</p>
+								<p>Generation Stamp: {generationStamp}</p>
+								<p>Size: {numBytes}</p>
+							{/block}
+							<p>Availability:
+								<ul>
+								{#locations}
+								<li>{hostName}</li>
+								{/locations}
+								</ul>
+							</p>
+						</script>
+
+					</div>
 				</div>
 			</div>
-		</div> 
-		
-		<!-- modal -->
+
+
+
+
+
             <div class="row">
-	<?php	
-		require_once '/data/website/libble/pages/class/mysql.class.php';
-        	$db=new Mysql();
-		$result=$db->select("Workbench","id=".$_SESSION['ml_wbid']);
-		$wb = $result->fetch_assoc();
-	?>
-		<br>	
-		<div class="col-lg-9">
+				<?php	
+					$result=$db->select("Workbench","id=".$_SESSION['ml_wbid']);
+					$wb = $result->fetch_assoc();
+				?>
+			<br>	
+			<div class="col-lg-9">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <i class="fa fa-dashboard fa-fw"></i> 任务布局
@@ -401,152 +367,21 @@
     <!-- Custom Theme JavaScript -->
     <script src="../dist/js/sb-admin-2.js"></script>
     <script src="../js/Chart.js"></script>
-	<!--new-->
-	   	<script type="text/javascript" src="../vendor/new/dust-full-2.0.0.min.js">
+    <script type="text/javascript" src="../vendor/new/dust-full-2.0.0.min.js">
     </script><script type="text/javascript" src="../vendor/new/dust-helpers-1.1.1.min.js">
     </script><script type="text/javascript" src="../vendor/new/dfs-dust.js">
     </script><script type="text/javascript" src="../vendor/new/explorer.js">
     </script><script type="text/javascript" src="../vendor/new/jquery-ui.min.js">
     </script>
-    <script type="text/javascript">
-	$(".modal-dialog").draggable({
-					cursor: "move",
-			//		handle: '.modal-header'
-				});
-	  $('.modal-content').resizable({
-    //alsoResize: ".modal-dialog",
-    minHeight: 580,
-	minWidth:400
-	});
-	var xmlobj;
-	function createXMLHttpRequest(){
-		if(window.ActiveXObject){
-			xmlobj=new ActiveXObject("Microsoft.XMLHTTP");
-		}
-		else if(window.XMLHttpRequest){
-			xmlobj=new XMLHttpRequest();
-		}
-	}
-	function Autofresh(){
-	//	alert("action/read.php?fname='"+$('#numIters').attr('value')+".txt'");
-		createXMLHttpRequest();        
-		xmlobj.open("GET","action/read.php?fname='"+$('.mytest').attr('title')+".txt'",true);
-		xmlobj.onreadystatechange=doAjax;
-		xmlobj.send("r="+Math.random());
-	}		
-	function doAjax(){
-		if(xmlobj.readyState==4 && xmlobj.status==200){
-			var itnum = $('#numIters').attr('value');//<?php echo $taskinfo["numIters"]?>;
-			//var itnum = 10;
-			var bar=document.getElementById('bar');
-			var state=document.getElementById('state');
-			var label_val = new Array();
-			//label_val = ["1","2"];
-			var nowdatast = xmlobj.responseText.split(',');
-			var nowdata = new Array();
-			//nowdata = [0.5,0.7];
-			//var percent = 0;
-			var batch = 1.0;
-			if (itnum>20) batch = itnum/20;
-			if (!(xmlobj.responseText == "")){
-				for (var i=0;i<nowdatast.length;i++){
-					nowdata[i]=parseFloat(nowdatast[i]);
-				}
-				for (var i=0;i<itnum;i++){
-					label_val[i] = i+1;	
-				}
-				//percent = nowdatast.length*100/itnum;
-				if (nowdatast.length == itnum ){
-					state.innerHTML='<i class="fa fa-flag fa-fw"></i> 已完成！';
-				}
-				else{
-					state.innerHTML='<i class="fa fa-desktop fa-fw"></i> 计算中...';
-				}
-			}
-			//bar.innerHTML='<div class="progress-bar"  role="progressbar"  aria-valuemin="0" aria-valuemax="100" style="width: '+ percent +'%"></div>';
-			var lineChartData = {
-				labels : label_val,
-				datasets : [
-					 {
-						fillColor : "rgba(151,187,205,0.5)",
-						strokeColor : "rgba(151,187,205,1)",
-	   					pointColor : "rgba(151,187,205,1)",
-	  					pointStrokeColor : "#fff",
-	    					data : nowdata
-	 				}
 
-	 			]
-			};	
-			var defaults = {
-				scaleOverlay : false,
-		       		scaleOverride : false,
-	       			scaleSteps : null,
-	       			scaleStepWidth : null,
-	       			scaleStartValue : null,
-				scaleLineColor : "rgba(0,0,0,.1)",
-				scaleLineWidth : 1,
-				scaleShowLabels : true,
-				scaleLabel : "<%=value%>",
-				scaleFontFamily : "'Arial'",
-				scaleFontSize : 12,
-				scaleFontStyle : "normal",
-				scaleFontColor : "#666",
-				scaleShowGridLines : true,
-				scaleGridLineColor : "rgba(0,0,0,.05)",
-				scaleGridLineWidth : 1,
-				bezierCurve : true,
-				pointDot : true,
-				pointDotRadius : 4,
-				pointDotStrokeWidth : 2,
-				datasetStroke : true,
-				datasetStrokeWidth : 2,
-				datasetFill : true,
-				animation : false,
-				animationSteps : 60,
-				animationEasing : "easeOutQuart",
-				onAnimationComplete : null
-			};
-			$('#line').remove();
-			$('#linechart').append('<canvas id="line" height = "360"></canvas>');
-			var $withd=$("#linechart").width();
-			document.getElementById("line").width=$withd*batch;
-			new Chart(document.getElementById("line").getContext("2d")).Line(lineChartData,defaults);	
-			if ((nowdatast.length > 20 )&&(nowdatast.length < itnum )) document.getElementById('linechart').scrollLeft=(nowdatast.length-20)/itnum*$withd*batch;
-			if (nowdatast.length < itnum )setTimeout("Autofresh()",1000);
-		}
-	}
-    
-	</script>
-	<script type="text/javascript">
-	//	$('#runModal').modal({
-       	// 	show: false,
-        //	remote: 'view.php?taskid=90'
-	//	});
-	//	alert("fuck????");
-		$("body").on('click','.mytest', function () {
-       // 	alert("are you kidding me !!");
-	//	$('#runModal').removeData('bs.modal');
-        //	$('#runModal').modal({remote: 'view.php?taskid='+$(this).attr('title') });
-	//	alert("fuck!!!");
-		Autofresh();
-        //	$('#runModal').modal('show').find('.modal-body').load('view.php?taskid='+$(this).attr('title'));
-		});
-				
-	</script>
-   	<!--new -->
-     <script>
+    <script>
+	        
     	mydraw = document.getElementById('mydraw');
 	drawl = getLeft(mydraw);
 	drawr = drawl + mydraw.offsetWidth;
 	drawt = getTop(mydraw);
 	drawd = drawt + mydraw.offsetHeight;
-	//document.getElementById("mydraw").innerHTML += "<span>"+drawl+" </span>";
-	//document.getElementById("mydraw").innerHTML += "<span>"+drawr+" </span>";
-	//document.getElementById("mydraw").innerHTML += "<span>"+drawt+" </span>";
-	//document.getElementById("mydraw").innerHTML += "<span>"+drawd+" </span>";
-	//var pos = document.getElementById('lr');
-	//document.getElementById("mydraw").innerHTML += "<span>"+getTop(pos)+"  </span>";
-	//document.getElementById("mydraw").innerHTML += "<span>"+getLeft(pos)+"  </span>";
+
 
 	var xmlobj;
 	function createXMLHttpRequest(){
@@ -560,13 +395,34 @@
 
 
 
-	function show(str){
+	function show(type){
 
-		isFirst = true;
+		isFirst = type;
 
 		var tip = document.createElement('input');
 		tip.type = "button";
-		tip.value = str;
+		if (type == 0){
+			tip.value = "Logistic Regression";
+		}
+		if (type == 1){
+			tip.value = "Lasso";
+		}
+		if (type == 2){
+			tip.value = "SVM";
+		}
+		if (type == 3){
+			tip.value = "Ridge Regression";
+		}
+		if (type == 4){
+			tip.value = "Matrix Factorization";
+		}
+		if (type == 5){
+			tip.value = "AlexNet";
+		}
+		if (type == 6){
+			tip.value = 'RNN';
+		}
+
 		tip.className = "btn  btn-default"
 		tip.style.position = "absolute";
 
@@ -594,12 +450,11 @@
 	}
 
 	function grabber(event) {
-		isFirst = false;
+		isFirst = -1;
 		
 		theElement = event.currentTarget;
 
-		createXMLHttpRequest();   
-		//alert("I'm working!!");     
+		createXMLHttpRequest();        
 		xmlobj.open("GET","action/taskinfo.php?taskid="+theElement.id,true);
 		xmlobj.onreadystatechange= taskinfo;
 		xmlobj.send("r="+Math.random());
@@ -632,7 +487,7 @@
 		//var oldY = parseInt(theElement.style.top);
 
 
-		if (!isFirst){
+		if (isFirst==-1){
 			if (newX < drawl){
 				newX = drawl;
 			}
@@ -651,19 +506,20 @@
 		theElement.style.top = newY + "px";
 
 		event.stopPropagation();
+		event.preventDefault();
 	}
 
 	function dropper(event) {
 
-		if(isFirst) {
+		if(isFirst>=0) {
 			if(event.clientX-diffX >= drawl && event.clientX-diffX+width <= drawr && event.clientY-diffY >= drawt && event.clientY-diffY+height <= drawd) {
-				isFirst = false;
 				var posX = parseInt(theElement.style.left);
 				var posY = parseInt(theElement.style.top);
 				createXMLHttpRequest();        
-				xmlobj.open("GET","action/newtask.php?posX="+(posX-drawl)/mydraw.offsetWidth+"&posY="+posY,true);
+				xmlobj.open("GET","action/newtask.php?posX="+(posX-drawl)/(mydraw.offsetWidth-width)+"&posY="+posY+"&type="+isFirst,true);
 				xmlobj.onreadystatechange=newtask;
 				xmlobj.send("r="+Math.random());				
+				isFirst = -1;
 			}
 			else {
 				document.getElementsByTagName('body')[0].removeChild(theElement);
@@ -674,7 +530,7 @@
 			var posY = parseInt(theElement.style.top);
 			var taskid = theElement.id;
 			createXMLHttpRequest();        
-			xmlobj.open("GET","action/postask.php?posX="+(posX-drawl)/mydraw.offsetWidth+"&posY="+posY+"&taskid="+taskid,true);
+			xmlobj.open("GET","action/postask.php?posX="+(posX-drawl)/(mydraw.offsetWidth-width)+"&posY="+posY+"&taskid="+taskid,true);
 			xmlobj.onreadystatechange= function(){ }
 			xmlobj.send("r="+Math.random());				
 			
@@ -684,6 +540,7 @@
 		document.removeEventListener("mousemove", mover, true);
 
 		event.stopPropagation();
+		event.preventDefault();
 	}
 		
 	function getTop(e){ 
@@ -716,9 +573,9 @@
 		xmlobj.onreadystatechange= function(){ }
 		xmlobj.send("r="+Math.random());				
 	}
-	function runtask(id,type){	
+	function runtask(id){	
 		createXMLHttpRequest();        
-		xmlobj.open("GET","action/runtask.php?taskid="+id+"&type"+type,true);
+		xmlobj.open("GET","action/runtask.php?taskid="+id,true);
 		xmlobj.onreadystatechange= taskinfo;
 		xmlobj.send("r="+Math.random());				
 	}
@@ -738,19 +595,43 @@
 		xmlobj.open("GET","action/loadtask.php",true);
 		xmlobj.onreadystatechange= loadtask;
 		xmlobj.send("r="+Math.random());				
-
 	}
 	function loadtask(){
 		if(xmlobj.readyState==4 && xmlobj.status==200){
+    			mydraw = document.getElementById('mydraw');
+			drawl = getLeft(mydraw);
+			drawr = drawl + mydraw.offsetWidth;
+			drawt = getTop(mydraw);
+			drawd = drawt + mydraw.offsetHeight;
 			if (xmlobj.responseText.length== 1) return;
 			var tasks = xmlobj.responseText.split('#');
 			for (var i=0;i<tasks.length;i++){
 				var info = tasks[i].split(',');
-				isFirst = true;
+				isFirst = -1;
 
 				var tip = document.createElement('input');
 				tip.type = "button";
-				tip.value = "Logistic Regression";
+				if (info[3] == 0){
+					tip.value = "Logistic Regression";
+				}
+				if (info[3] == 1){
+					tip.value = "Lasso";
+				}
+				if (info[3] == 2){
+					tip.value = "SVM";
+				}
+				if (info[3] == 3){
+					tip.value = "Ridge Regression";
+				}
+				if (info[3] == 4){
+					tip.value = "Matrix Factorization";
+				}
+				if (info[3] == 5){
+					tip.value = "AlexNet";
+				}
+				if (info[3] == 6){
+					tip.value = "RNN";
+				}
 				tip.className = "btn  btn-default"
 				tip.style.position = "absolute";
 				tip.id = info[0];
@@ -759,13 +640,12 @@
 				tip.onmousedown = grabber;
 
 				document.getElementsByTagName('body')[0].appendChild(tip);
-				tip.style.top = info[2] + "px";
-				var t = Math.round(parseFloat(info[1])*mydraw.offsetWidth + drawl);
-				tip.style.left = t + "px";
-				//document.getElementById("mydraw").innerHTML += "<span>"+t+" </span>";
 				width = tip.offsetWidth;
 				height = tip.offsetHeight;
-
+				tip.style.top = info[2] + "px";
+				var t = Math.round(parseFloat(info[1])*(mydraw.offsetWidth-width) + drawl);
+				tip.style.left = t + "px";
+				//document.getElementById("mydraw").innerHTML += "<span>"+t+" </span>";
 				theElement = tip;
 				var posX = parseInt(theElement.style.left);
 				var posY = parseInt(theElement.style.top);

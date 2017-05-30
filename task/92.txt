@@ -1,0 +1,11 @@
+loss: 0.6931471805599932 at iters: 0, with time: 1
+loss: 0.4728052358900857 at iters: 1, with time: 2452
+loss: 0.47132045239706016 at iters: 2, with time: 4770
+loss: 0.4713002671402021 at iters: 3, with time: 6916
+loss: 0.47129953168190136 at iters: 4, with time: 8578
+loss: 0.4712994987033366 at iters: 5, with time: 10047
+loss: 0.47129949697992324 at iters: 6, with time: 11376
+loss: 0.4712994968815439 at iters: 7, with time: 12981
+loss: 0.4712994968755616 at iters: 8, with time: 14363
+loss: 0.4712994968751818 at iters: 9, with time: 15860
+losses of the last 5 iteration are:0.4712994987033366,0.47129949697992324,0.4712994968815439,0.4712994968755616,0.4712994968751818

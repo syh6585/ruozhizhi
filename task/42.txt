@@ -1,0 +1,121 @@
+Namespace(batch_size=256, gpu_no=8, learning_rate=0.01, save_name='/home/cheny/cnn_for_remote/test1', training_eps=100, training_home='/home/cheny/cnn_parameter')
+Train Loss: 2.640557 Test Loss: 2.640919 Train Accuracy: 0.095500 Test Accuracy: 0.082500
+EP 0, MB 0, LR 0.010000, MB Loss 2.641686
+EP 1, MB 2, LR 0.010000, MB Loss 2.546641
+Train Loss: 2.977597 Test Loss: 2.899457 Train Accuracy: 0.105000 Test Accuracy: 0.115000
+EP 2, MB 4, LR 0.010000, MB Loss 2.970352
+EP 3, MB 6, LR 0.010000, MB Loss 2.600597
+Train Loss: 3.064709 Test Loss: 3.035622 Train Accuracy: 0.099000 Test Accuracy: 0.110000
+EP 5, MB 0, LR 0.010000, MB Loss 3.136812
+EP 6, MB 2, LR 0.010000, MB Loss 2.627419
+Train Loss: 2.386409 Test Loss: 2.364604 Train Accuracy: 0.333000 Test Accuracy: 0.327500
+EP 7, MB 4, LR 0.010000, MB Loss 2.388834
+EP 8, MB 6, LR 0.010000, MB Loss 6.259792
+Train Loss: 2.793282 Test Loss: 2.790122 Train Accuracy: 0.105000 Test Accuracy: 0.115000
+EP 10, MB 0, LR 0.010000, MB Loss 2.800394
+EP 11, MB 2, LR 0.010000, MB Loss 2.871840
+Train Loss: 2.719381 Test Loss: 2.699335 Train Accuracy: 0.237500 Test Accuracy: 0.295000
+EP 12, MB 4, LR 0.010000, MB Loss 2.712605
+EP 13, MB 6, LR 0.010000, MB Loss 2.912994
+Train Loss: 48.057867 Test Loss: 47.263020 Train Accuracy: 0.100000 Test Accuracy: 0.085000
+EP 15, MB 0, LR 0.010000, MB Loss 48.853138
+EP 16, MB 2, LR 0.010000, MB Loss nan
+Train Loss: nan Test Loss: nan Train Accuracy: 0.089000 Test Accuracy: 0.082500
+EP 17, MB 4, LR 0.010000, MB Loss nan
+EP 18, MB 6, LR 0.010000, MB Loss nan
+Train Loss: nan Test Loss: nan Train Accuracy: 0.095500 Test Accuracy: 0.082500
+EP 20, MB 0, LR 0.010000, MB Loss nan
+EP 21, MB 2, LR 0.010000, MB Loss nan
+Train Loss: nan Test Loss: nan Train Accuracy: 0.107000 Test Accuracy: 0.082500
+EP 22, MB 4, LR 0.010000, MB Loss nan
+EP 23, MB 6, LR 0.010000, MB Loss nan
+Train Loss: nan Test Loss: nan Train Accuracy: 0.095500 Test Accuracy: 0.082500
+EP 25, MB 0, LR 0.010000, MB Loss nan
+EP 26, MB 2, LR 0.010000, MB Loss nan
+Train Loss: nan Test Loss: nan Train Accuracy: 0.099000 Test Accuracy: 0.082500
+EP 27, MB 4, LR 0.010000, MB Loss nan
+EP 28, MB 6, LR 0.010000, MB Loss nan
+Train Loss: nan Test Loss: nan Train Accuracy: 0.095500 Test Accuracy: 0.082500
+EP 30, MB 0, LR 0.010000, MB Loss nan
+EP 31, MB 2, LR 0.010000, MB Loss nan
+Train Loss: nan Test Loss: nan Train Accuracy: 0.096500 Test Accuracy: 0.082500
+EP 32, MB 4, LR 0.010000, MB Loss nan
+EP 33, MB 6, LR 0.010000, MB Loss nan
+Train Loss: nan Test Loss: nan Train Accuracy: 0.095500 Test Accuracy: 0.082500
+EP 35, MB 0, LR 0.010000, MB Loss nan
+EP 36, MB 2, LR 0.010000, MB Loss nan
+Train Loss: nan Test Loss: nan Train Accuracy: 0.090000 Test Accuracy: 0.082500
+EP 37, MB 4, LR 0.010000, MB Loss nan
+EP 38, MB 6, LR 0.010000, MB Loss nan
+Train Loss: nan Test Loss: nan Train Accuracy: 0.095500 Test Accuracy: 0.082500
+EP 40, MB 0, LR 0.010000, MB Loss nan
+EP 41, MB 2, LR 0.010000, MB Loss nan
+Train Loss: nan Test Loss: nan Train Accuracy: 0.093500 Test Accuracy: 0.082500
+EP 42, MB 4, LR 0.010000, MB Loss nan
+EP 43, MB 6, LR 0.010000, MB Loss nan
+Train Loss: nan Test Loss: nan Train Accuracy: 0.095500 Test Accuracy: 0.082500
+EP 45, MB 0, LR 0.010000, MB Loss nan
+EP 46, MB 2, LR 0.010000, MB Loss nan
+Train Loss: nan Test Loss: nan Train Accuracy: 0.094500 Test Accuracy: 0.082500
+EP 47, MB 4, LR 0.010000, MB Loss nan
+EP 48, MB 6, LR 0.010000, MB Loss nan
+Train Loss: nan Test Loss: nan Train Accuracy: 0.095500 Test Accuracy: 0.082500
+EP 50, MB 0, LR 0.010000, MB Loss nan
+EP 51, MB 2, LR 0.010000, MB Loss nan
+Train Loss: nan Test Loss: nan Train Accuracy: 0.103000 Test Accuracy: 0.082500
+EP 52, MB 4, LR 0.010000, MB Loss nan
+EP 53, MB 6, LR 0.010000, MB Loss nan
+Train Loss: nan Test Loss: nan Train Accuracy: 0.095500 Test Accuracy: 0.082500
+EP 55, MB 0, LR 0.010000, MB Loss nan
+EP 56, MB 2, LR 0.010000, MB Loss nan
+Train Loss: nan Test Loss: nan Train Accuracy: 0.086000 Test Accuracy: 0.082500
+EP 57, MB 4, LR 0.010000, MB Loss nan
+EP 58, MB 6, LR 0.010000, MB Loss nan
+Train Loss: nan Test Loss: nan Train Accuracy: 0.095500 Test Accuracy: 0.082500
+EP 60, MB 0, LR 0.010000, MB Loss nan
+EP 61, MB 2, LR 0.010000, MB Loss nan
+Train Loss: nan Test Loss: nan Train Accuracy: 0.089500 Test Accuracy: 0.082500
+EP 62, MB 4, LR 0.010000, MB Loss nan
+EP 63, MB 6, LR 0.010000, MB Loss nan
+Train Loss: nan Test Loss: nan Train Accuracy: 0.095500 Test Accuracy: 0.082500
+EP 65, MB 0, LR 0.010000, MB Loss nan
+EP 66, MB 2, LR 0.010000, MB Loss nan
+Train Loss: nan Test Loss: nan Train Accuracy: 0.099000 Test Accuracy: 0.082500
+EP 67, MB 4, LR 0.010000, MB Loss nan
+EP 68, MB 6, LR 0.010000, MB Loss nan
+Train Loss: nan Test Loss: nan Train Accuracy: 0.095500 Test Accuracy: 0.082500
+EP 70, MB 0, LR 0.010000, MB Loss nan
+EP 71, MB 2, LR 0.010000, MB Loss nan
+Train Loss: nan Test Loss: nan Train Accuracy: 0.092000 Test Accuracy: 0.082500
+EP 72, MB 4, LR 0.010000, MB Loss nan
+EP 73, MB 6, LR 0.010000, MB Loss nan
+Train Loss: nan Test Loss: nan Train Accuracy: 0.095500 Test Accuracy: 0.082500
+EP 75, MB 0, LR 0.010000, MB Loss nan
+EP 76, MB 2, LR 0.010000, MB Loss nan
+Train Loss: nan Test Loss: nan Train Accuracy: 0.101500 Test Accuracy: 0.082500
+EP 77, MB 4, LR 0.010000, MB Loss nan
+EP 78, MB 6, LR 0.010000, MB Loss nan
+Train Loss: nan Test Loss: nan Train Accuracy: 0.095500 Test Accuracy: 0.082500
+EP 80, MB 0, LR 0.010000, MB Loss nan
+EP 81, MB 2, LR 0.010000, MB Loss nan
+Train Loss: nan Test Loss: nan Train Accuracy: 0.098000 Test Accuracy: 0.082500
+EP 82, MB 4, LR 0.010000, MB Loss nan
+EP 83, MB 6, LR 0.010000, MB Loss nan
+Train Loss: nan Test Loss: nan Train Accuracy: 0.095500 Test Accuracy: 0.082500
+EP 85, MB 0, LR 0.010000, MB Loss nan
+EP 86, MB 2, LR 0.010000, MB Loss nan
+Train Loss: nan Test Loss: nan Train Accuracy: 0.094500 Test Accuracy: 0.082500
+EP 87, MB 4, LR 0.010000, MB Loss nan
+EP 88, MB 6, LR 0.010000, MB Loss nan
+Train Loss: nan Test Loss: nan Train Accuracy: 0.095500 Test Accuracy: 0.082500
+EP 90, MB 0, LR 0.010000, MB Loss nan
+EP 91, MB 2, LR 0.010000, MB Loss nan
+Train Loss: nan Test Loss: nan Train Accuracy: 0.088000 Test Accuracy: 0.082500
+EP 92, MB 4, LR 0.010000, MB Loss nan
+EP 93, MB 6, LR 0.010000, MB Loss nan
+Train Loss: nan Test Loss: nan Train Accuracy: 0.095500 Test Accuracy: 0.082500
+EP 95, MB 0, LR 0.010000, MB Loss nan
+EP 96, MB 2, LR 0.010000, MB Loss nan
+Train Loss: nan Test Loss: nan Train Accuracy: 0.097500 Test Accuracy: 0.082500
+EP 97, MB 4, LR 0.010000, MB Loss nan
+EP 98, MB 6, LR 0.010000, MB Loss nan

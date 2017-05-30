@@ -1,0 +1,2 @@
+Namespace(batch_size=256, gpu_no=8, learning_rate=0.001, save_name='/home/cheny/cnn_for_remote/test1', training_eps=60, training_home='/home/cheny/cnn_parameter')
+Train Loss: 2.639837 Test Loss: 2.638506 Train Accuracy: 0.105000 Test Accuracy: 0.102500

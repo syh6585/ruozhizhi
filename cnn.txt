@@ -1,0 +1,8 @@
+Namespace(batch_size=256, gpu_no=8, learning_rate=0.01, save_name='daibi', training_eps=100, training_home='/home/cheny/cnn_parameter')
+Train Loss: 2.639771 Test Loss 2.639687 Train Accuracy: 0.112367 Test Accuracy 0.113500
+EP 0, MB 0, LR 0.010000, MB Loss 2.641907
+EP 0, MB 20, LR 0.010000, MB Loss 3.319162
+EP 0, MB 40, LR 0.010000, MB Loss 2.611166
+EP 0, MB 60, LR 0.010000, MB Loss 2.692410
+EP 0, MB 80, LR 0.010000, MB Loss 2.625571
+EP 0, MB 100, LR 0.010000, MB Loss 3.171911

@@ -1,0 +1,39 @@
+Namespace(batch_size=256, gpu_no=8, learning_rate=0.001, save_name='/home/cheny/cnn_for_remote/test1', training_eps=60, training_home='/home/cheny/cnn_parameter')
+Train Loss: 2.638617 Test Loss: 2.639503 Train Accuracy: 0.095500 Test Accuracy: 0.082500
+EP 0, MB 0, LR 0.010000, MB Loss 2.636831
+EP 1, MB 2, LR 0.010000, MB Loss 2.551771
+Train Loss: 3.121713 Test Loss: 3.201751 Train Accuracy: 0.111000 Test Accuracy: 0.115000
+EP 2, MB 4, LR 0.010000, MB Loss 3.112350
+EP 3, MB 6, LR 0.010000, MB Loss 2.624252
+Train Loss: 2.266518 Test Loss: 2.222243 Train Accuracy: 0.247000 Test Accuracy: 0.307500
+EP 5, MB 0, LR 0.010000, MB Loss 2.247489
+EP 6, MB 2, LR 0.010000, MB Loss 2.870312
+Train Loss: 2.607259 Test Loss: 2.565239 Train Accuracy: 0.216500 Test Accuracy: 0.252500
+EP 7, MB 4, LR 0.010000, MB Loss 2.572629
+EP 8, MB 6, LR 0.010000, MB Loss 2.865396
+Train Loss: 2.711020 Test Loss: 2.696769 Train Accuracy: 0.110000 Test Accuracy: 0.142500
+EP 10, MB 0, LR 0.010000, MB Loss 2.724936
+EP 11, MB 2, LR 0.010000, MB Loss 2.680142
+Train Loss: 2.820671 Test Loss: 2.855819 Train Accuracy: 0.050500 Test Accuracy: 0.047500
+EP 12, MB 4, LR 0.010000, MB Loss 2.897350
+EP 13, MB 6, LR 0.010000, MB Loss 2.798731
+Train Loss: 2.725530 Test Loss: 2.709735 Train Accuracy: 0.131000 Test Accuracy: 0.165000
+EP 15, MB 0, LR 0.010000, MB Loss 2.730972
+EP 16, MB 2, LR 0.010000, MB Loss 2.649605
+Train Loss: 2.619669 Test Loss: 2.586382 Train Accuracy: 0.186000 Test Accuracy: 0.207500
+EP 17, MB 4, LR 0.010000, MB Loss 2.618253
+EP 18, MB 6, LR 0.010000, MB Loss 3.325320
+Train Loss: 2.737335 Test Loss: 2.744487 Train Accuracy: 0.105000 Test Accuracy: 0.102500
+EP 20, MB 0, LR 0.010000, MB Loss 2.732975
+EP 21, MB 2, LR 0.010000, MB Loss 2.737987
+Train Loss: 2.729656 Test Loss: 2.714466 Train Accuracy: 0.105500 Test Accuracy: 0.142500
+EP 22, MB 4, LR 0.010000, MB Loss 2.719534
+EP 23, MB 6, LR 0.010000, MB Loss 2.705377
+Train Loss: 2.647168 Test Loss: 2.622930 Train Accuracy: 0.178500 Test Accuracy: 0.207500
+EP 25, MB 0, LR 0.010000, MB Loss 2.630915
+EP 26, MB 2, LR 0.010000, MB Loss 12.263358
+Train Loss: 2.975285 Test Loss: 2.942168 Train Accuracy: 0.099000 Test Accuracy: 0.110000
+EP 27, MB 4, LR 0.010000, MB Loss 2.917865
+EP 28, MB 6, LR 0.010000, MB Loss 2.802889
+Train Loss: 2.792173 Test Loss: 2.780662 Train Accuracy: 0.180500 Test Accuracy: 0.212500
+EP 30, MB 0, LR 0.010000, MB Loss 2.786594

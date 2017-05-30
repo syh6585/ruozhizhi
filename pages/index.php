@@ -112,20 +112,35 @@
                                             <a href="#">Logistic Regression</a>
                                         </li>
                                         <li>
+                                            <a href="#">Lasso</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">SVM</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Ridge Regression</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Matrix Factorization</a>
+                                        </li>
+                                        <li>
                                             <a href="#">待开发...</a>
                                         </li>
                                     </ul>
                                     <!-- /.nav-third-level -->
                                 </li>
                                 <li>
-                                    <a href="#">深层学习 <span class="fa arrow"></span></a>
+                                    <a href="#">深度学习 <span class="fa arrow"></span></a>
                                     <ul class="nav nav-third-level">
                                         <li>
-                                            <a href="#">待开发...</a>
+                                            <a href="#">AlexNet</a>
                                         </li>
                                         <li>
-                                            <a href="#">待开发...</a>
+                                            <a href="#">RNN</a>
                                         </li>
+					<li>
+					    <a href="#">待开发...</a>
+					</li>
                                     </ul>
                                     <!-- /.nav-third-level -->
                                 </li>

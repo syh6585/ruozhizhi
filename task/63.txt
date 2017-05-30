@@ -1,0 +1,53 @@
+getData:: 12500 files keep: 500.0 files
+getData:: 12500 files keep: 500.0 files
+getData::vocab size 17106
+getData::cost 0.253083944321 seconds
+getData:: 12500 files keep: 500.0 files
+getData:: 12500 files keep: 500.0 files
+getData::vocab size 17106
+getData::cost 0.238635063171 seconds
+input_IMDB_W2V:: words, dim  89567 300
+input_IMDB_W2V::cost 9.96718907356 seconds
+input_IMDB_W2V::embdding 17106
+train: 900  valid: 100  test: 1000
+Warning -- This is embedding_initializer function
+weigth decay for  model/hidden_to_out_weight:0
+weigth decay for  model/bidirectional_rnn/fw/gru_cell/gates/weights:0
+weigth decay for  model/bidirectional_rnn/fw/gru_cell/candidate/weights:0
+weigth decay for  model/bidirectional_rnn/bw/gru_cell/gates/weights:0
+weigth decay for  model/bidirectional_rnn/bw/gru_cell/candidate/weights:0
+Warning -- This is embedding_initializer function
+Build graph done!
+EP 1, MB 1, lr 5e-05, MB Loss= 0.7997
+EP 1, MB 2, lr 5e-05, MB Loss= 0.7998
+EP 1, MB 3, lr 5e-05, MB Loss= 0.8005
+EP 1, MB 4, lr 5e-05, MB Loss= 0.8007
+EP 1, MB 5, lr 5e-05, MB Loss= 0.8008
+EP 1, MB 6, lr 5e-05, MB Loss= 0.7998
+EP 1, MB 7, lr 5e-05, MB Loss= 0.8003
+EP 1, MB 8, lr 5e-05, MB Loss= 0.7998
+EP 1, MB 9, lr 5e-05, MB Loss= 0.7998
+Train Loss:  0.6932 Test Loss:  0.6931 Train Accuracy:  0.5056 Test Accuracy:  0.5170
+
+
+EP 2, MB 1, lr 5e-05, MB Loss= 0.8000
+EP 2, MB 2, lr 5e-05, MB Loss= 0.7998
+EP 2, MB 3, lr 5e-05, MB Loss= 0.8006
+EP 2, MB 4, lr 5e-05, MB Loss= 0.8003
+EP 2, MB 5, lr 5e-05, MB Loss= 0.7999
+EP 2, MB 6, lr 5e-05, MB Loss= 0.8000
+EP 2, MB 7, lr 5e-05, MB Loss= 0.7999
+EP 2, MB 8, lr 5e-05, MB Loss= 0.8003
+EP 2, MB 9, lr 5e-05, MB Loss= 0.8003
+Train Loss:  0.6932 Test Loss:  0.6931 Train Accuracy:  0.5067 Test Accuracy:  0.5150
+
+
+EP 3, MB 1, lr 5e-05, MB Loss= 0.7995
+EP 3, MB 2, lr 5e-05, MB Loss= 0.8000
+EP 3, MB 3, lr 5e-05, MB Loss= 0.7996
+EP 3, MB 4, lr 5e-05, MB Loss= 0.7998
+EP 3, MB 5, lr 5e-05, MB Loss= 0.8005
+EP 3, MB 6, lr 5e-05, MB Loss= 0.7996
+EP 3, MB 7, lr 5e-05, MB Loss= 0.7994
+EP 3, MB 8, lr 5e-05, MB Loss= 0.7988
+EP 3, MB 9, lr 5e-05, MB Loss= 0.7992
